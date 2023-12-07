@@ -4,10 +4,6 @@ using std::cout;
 
 class Node final {
 public:
-    /**
-     * Ctor
-     * @param val noe value
-     */
     explicit Node(int val) {
         value = val;
         next = nullptr;
@@ -30,10 +26,6 @@ private:
     int length;
 
 public:
-    /**
-     * Ctor
-     * @param value First node value
-     */
     explicit DoublyLinkedList(int value) {
         Node *newNode = new Node(value);
         head = newNode;
@@ -41,9 +33,6 @@ public:
         length = 1;
     }
 
-    /**
-     * Dtor
-     */
     ~DoublyLinkedList() {
         Node *temp = head;
         while (head) {
@@ -294,7 +283,3 @@ public:
         return true;
     }
 };
-
-int main() {
-    return 0;
-}

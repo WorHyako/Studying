@@ -305,35 +305,3 @@ private:
 
     int length;
 };
-
-int main() {
-    LinkedList list(1);
-
-    list.print();
-    list.append(2);
-    list.print();
-    list.insert(2, 3);
-    list.print();
-
-    auto kthFromEnd = list.findKthFromEnd(3);
-    auto node = list.get(2);
-
-    list.append(3);
-    list.print();
-    list.append(4);
-    list.print();
-    list.reverse();
-    list.print();
-    list.insert(3, 3);
-    list.print();
-    list.deleteLast();
-    list.print();
-    list.deleteFirst();
-    list.print();
-    list.deleteNode(2);
-    list.print();
-    list.insert(1, 5);
-    list.print();
-
-    return 0;
-}
